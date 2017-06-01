@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="myContact">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<style>
+.custom
+{
+background-color:#bab08f;
+margin-top:180px;
+height:500px;
+width:600px;
+}
+input,label,button
+{
+margin-top:20px;
+margin-left:20px;
+}
+</style>
+</head>
+<body ng-controller="mycontroller">
+
+<div class="container custom">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Name:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="email" placeholder="mandatory" name="email" ng-model="contact.name">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="email" placeholder="mandatory" name="email" ng-model="contact.email">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2">Mobile:</label>
+      <div class="col-sm-6">
+        <input class="form-control" id="email"  name="email" ng-model="contact.Mobile">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-6">          
+        <input type="password" class="form-control" id="pwd"  name="pwd" ng-model="contact.password">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-6">
+        <button class="btn btn-default" ng-click="createContact()">Register</button>
+        &nbsp&nbsp
+        <button class="btn btn-default" ng-click="clear()">Reset</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

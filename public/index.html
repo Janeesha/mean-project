@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+ <html ng-app="myContact">
+ <head>
+ 	<title>bootstrap</title>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ </head>
+ <body data-spy="scroll" data-target=".navbar" data-offset="50">
+ <style>
+ .customnav
+ {
+ 	max-height:70px;
+ 	background-color: #afb5db;
+	border-collapse:collapse;
+	color:#726dad;
+	font-size:20px;
+
+ }
+ #inbody
+ {
+ height:1800px;
+ background-color:powderblue;
+ }
+ a:hover
+ {
+ }
+ footer
+ {
+ background-color:white;
+ }
+ @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+ </style>
+ 
+ <nav class="navbar  navbar-fixed-top">
+  <div class="container-fluid customnav">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-size:30px;margin-left:20px">Tech Minds</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+	 <li><a href="#/home" style="margin-top:20px">Home</a></li>
+      <li><a href="#/register" style="margin-top:20px"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+      <li><a href="#/login" style="margin-top:20px"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="inbody" class="container"><ng-view></ng-view>
+</div>
+  <footer class="container-fluid text-center footer navbar-fixed-bottom">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">AshaKumar</a></p>
+</footer>
+<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+ </body>
+ </html>
